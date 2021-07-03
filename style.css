@@ -1,0 +1,108 @@
+body {
+    margin:0px ;
+    padding: 0px;
+
+}
+.top{
+    height: 6rem;
+    background-color: rgb(196, 196, 246);
+    display: flex;
+    flex-basis: 4fr 2fr 1fr;
+}
+.top .logo{
+    width: 150rem;
+    margin: 0px 516px 0px -78px;
+}
+.top .logo img{
+    width: 23rem;
+    height: 15rem;
+}
+.top .side{
+    display: flex;
+    margin: 0rem 2rem 0rem 55rem;
+    width: 50rem;
+    justify-content: flex-end;
+   
+
+}
+.top .side .login,.top .side .signup{
+    background-color:rgb(144, 108, 251);
+    width: 100px;
+    color: white;
+    align-self: center;
+    text-align: center;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+   
+}
+.top .side .login:hover,.top .side .signup:hover{
+   background-color: rgb(177, 88, 250);
+   text-decoration: underline;
+   transform: translate(3px, 3px);
+}
+.top .side .menu{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin: 30px;
+    cursor: pointer;
+}
+.top-1{
+    height: 50px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+.top-1 .opt{
+    font-size: 1.75rem;
+    margin:4px 15px;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px rgb(121, 105, 105);
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    border: 2px red;
+    row-gap: 25px;
+    column-gap: 15px;
+    
+}
+.content .photo{
+    /* border: 2px solid blue; */
+     
+    width: 100%;
+    /* gri */
+    
+}
+.content .photo img{
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.content .photo img:hover{
+    background-color: rgb(249, 236, 255);
+    opacity:0.9;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 15px;
+    background-color: rgb(47, 46, 49);
+    color: white;
+    
+}
+footer p{
+    display: inline;
+    margin: 5px 25%;
+    font-size: 2rem;
+}
