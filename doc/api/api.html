@@ -1,0 +1,25 @@
+<html>
+    <head>    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3.17.0/swagger-ui.css"/>
+        <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
+        <script >
+            function render() {
+              var json_data_str = "{  \"openapi\" : \"3.0.1\",  \"info\" : {    \"title\" : \"Related List Edit\",    \"description\" : \"\",    \"version\" : \"latest\"  },  \"externalDocs\" : {    \"url\" : \"\"  },  \"servers\" : [ {    \"url\" : \"https://dev222099.service-now.com/\"  } ],  \"paths\" : {    \"/api/now/related_list_edit/create\" : {      \"post\" : {        \"description\" : \"\",        \"parameters\" : [ ],        \"requestBody\" : {          \"content\" : {            \"application/json\" : { }          }        },        \"responses\" : {          \"200\" : {            \"description\" : \"ok\",            \"content\" : {              \"application/json\" : { },              \"application/xml\" : { },              \"text/xml\" : { }            }          }        }      }    }  }}";
+                var ui = SwaggerUIBundle({
+                    
+                    spec:JSON.parse(json_data_str),
+                    dom_id: '#swagger-ui',
+                    presets: [
+                        SwaggerUIBundle.presets.apis,
+                        SwaggerUIBundle.SwaggerUIStandalonePreset
+                    ]
+                });
+            }
+
+        </script>
+    </head>
+
+    <body onload="render()">
+        <div id="swagger-ui"></div>
+    </body>
+</html>
